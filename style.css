@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/id/525508231/photo/moraine-lake-rocky-mountains-canada.jpg?s=1024x1024&w=is&k=20&c=0PO_IX5r4PMn5TttaoUBv6eaArKxrJqHUj6CxBueYKo=');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#nav{
+    padding: 10px;
+    background: #000;
+}

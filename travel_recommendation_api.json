@@ -1,0 +1,81 @@
+{
+    "countries": [
+      {
+        "id": 1,
+        "name": "Australia",
+        "cities": [
+          {
+            "name": "Sydney, Australia",
+            "imageUrl": "https://media.istockphoto.com/id/535455441/photo/view-of-sydney-harbour-australia.jpg?s=1024x1024&w=is&k=20&c=S1fX7oGzoaBVYQI2Ci5CFRq0f3H4DYaHvS4XhLZgM5w=",
+            "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+          },
+          {
+            "name": "Melbourne, Australia",
+            "imageUrl": "https://media.istockphoto.com/id/600688368/cs/fotografie/centr%C3%A1ln%C3%AD-obchodn%C3%AD-%C4%8Dtvr%C5%A5-melbourne.jpg?s=1024x1024&w=is&k=20&c=9-UX4WWFObqZfJjIloDSWTF04QTqPvpOxoY6BAjQakc=",
+            "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Japan",
+        "cities": [
+          {
+            "name": "Tokyo, Japan",
+            "imageUrl": "https://img.freepik.com/free-photo/aerial-view-tokyo-cityscape-with-fuji-mountain-japan_335224-148.jpg?t=st=1715603666~exp=1715607266~hmac=4244e7ee003a09b183c8439a2a06c37cec0559a50afac700f82527585da8142f&w=740",
+            "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
+          },
+          {
+            "name": "Kyoto, Japan",
+            "imageUrl": "https://img.freepik.com/free-photo/yasaka-pagoda-sannen-zaka-street-kyoto-japan_335224-119.jpg?w=740&t=st=1715605052~exp=1715605652~hmac=67bf8b461e7e341d1284ee284b8d923a0e5b9d499d1e68e6250ae7166c952184",
+            "description": "Known for its historic temples, gardens, and traditional tea houses."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Brazil",
+        "cities": [
+          {
+            "name": "Rio de Janeiro, Brazil",
+            "imageUrl": "https://img.freepik.com/premium-photo/view-cityscape-against-mountain_1048944-18107348.jpg?w=740",
+            "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
+          },
+          {
+            "name": "São Paulo, Brazil",
+            "imageUrl": "https://img.freepik.com/free-photo/bridge-with-city_1127-4138.jpg?t=st=1715605116~exp=1715608716~hmac=62561cd4ac71442a01eeb7315f25ef54605212aab0800f1ef973f20d497655b4&w=740",
+            "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
+          }
+        ]
+      }
+    ],
+    "temples": [
+      {
+        "id": 1,
+        "name": "Angkor Wat, Cambodia",
+        "imageUrl": "https://img.freepik.com/premium-photo/angkor-wat-ancient-castle-cambodia_113629-483.jpg?w=740",
+        "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+      },
+      {
+        "id": 2,
+        "name": "Taj Mahal, India",
+        "imageUrl": "https://img.freepik.com/free-photo/mesmerizing-shot-famous-historic-taj-mahal-agra-india_181624-16028.jpg?t=st=1715605273~exp=1715608873~hmac=f5e68b06e36434697f4e8e7ba5f8bbb81b7d3279dbd66a986250b1a621ea866c&w=740",
+        "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+      }
+    ],
+    "beaches": [
+      {
+        "id": 1,
+        "name": "Bora Bora, French Polynesia",
+        "imageUrl": "https://img.freepik.com/premium-photo/tropical-paradise-exploring-natural-landscape-bora-bora-french-polynesia_995875-200.jpg?w=740",
+        "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+      },
+      {
+        "id": 2,
+        "name": "Copacabana Beach, Brazil",
+        "imageUrl": "https://img.freepik.com/free-photo/crowded-beach-sunbathing-fun-sun-generated-by-ai_24640-82771.jpg?t=st=1715605416~exp=1715609016~hmac=66bda8cc8ef308ce8a199d4206d07e2708100af44793e211ddbeb6dd49491cb7&w=740",
+        "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+      }
+    ]
+  }
+  

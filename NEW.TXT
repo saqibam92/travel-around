@@ -16,12 +16,11 @@ function search() {
   results.innerHTML = ``;
 
   const displayResults = (items, category) => {
+    const categoryHeader = document.createElement("h2");
+    categoryHeader.innerText =
+      category.charAt(0).toUpperCase() + category.slice(1);
+    results.appendChild(categoryHeader);
     if (items.length > 0) {
-      const categoryHeader = document.createElement("h2");
-      categoryHeader.innerText =
-        category.charAt(0).toUpperCase() + category.slice(1);
-      results.appendChild(categoryHeader);
-
       items.forEach((item) => {
         const itemDiv = document.createElement("div");
 
@@ -45,54 +44,49 @@ function search() {
       });
     } else {
       results.innerHTML = `<h2> ${category} not found</h2>`;
-      results.style.cssText = "";
+      results.style.cssText= ''
     }
   };
 
-  const filterItems = (data, keywords) => {
-    return data.filter((item) => {
-      return keywords.some(keyword => item.name.toLowerCase().includes(keyword));
-    });
+  const filterItems = (data, keyword) => {
+    // let newData = {}
+    const newData = data.filter((item) => item.name.toLowerCase().includes(keyword));
+    return newData
   };
 
   let foundresults = false;
 
-  const keywords = [searchInput];
-  if (searchInput.endsWith('s')) {
-    keywords.push(searchInput.slice(0, -1)); // singular form
-  } else {
-    keywords.push(searchInput + 's'); // plural form
-  }
-
   // search for countries
   data.countries.forEach((country) => {
-    const matchedCities = filterItems(country.cities, keywords);
-    if (keywords.some(keyword => country.name.toLowerCase().includes(keyword)) || matchedCities.length > 0) {
-      displayResults([country], "countries");
-      foundResults = true;
-    }
-    if (matchedCities.length > 0) {
-      displayResults(matchedCities, "cities");
-      foundResults = true;
+    const matchedCities = filterItems(country.cities, searchInput);
+    // if (
+    //   country.name.toLowerCase().includes(searchInput) ||
+    //   matchedCities.length > 0
+    // ) {
+    //   displayResults([country], "countries");
+    //   foundresults = true;
+    // }
+    if(matchedCities.length > 0) {
+    displayResults(matchedCities, "cities");
+    foundresults = true;
     }
   });
 
   // search for temples
-  const matchedTemples = filterItems(data.temples, searchInput);
-  if (matchedTemples.length > 0) {
-    displayResults(matchedTemples, "temples");
-    foundresults = true;
+  const matchedTemples =filterItems(data.temples, searchInput);
+  if(matchedTemples.length> 0) {
+      displayResults(matchedTemples, "temples");
+      foundresults = true;
   }
 
-  const matchedBeaches = filterItems(data.beaches, searchInput);
-  if (matchedBeaches.length > 0) {
-    displayResults(matchedBeaches, "beaches");
-    foundresults = true;
+  const matchedBeaches =filterItems(data.beaches, searchInput);
+  if(matchedBeaches.length> 0) {
+      displayResults(matchedBeaches, "beaches");
+      foundresults = true;
   }
 
-  if (!foundresults) {
-    results.innerHTML = `<h2> No Results found </h2>`;
-    results.style.cssText = "";
+  if(!foundresults) {
+    results.innerHTML = `<h2> No Results found </h2>`
   }
 }
 
